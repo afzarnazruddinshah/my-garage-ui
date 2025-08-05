@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+body {
+  overflow-x: hidden;
+}
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.title-header {
+  font-weight: bold !important;
+}
+
+.form-group {
+  display: block;
+
+  .form-field {
+    display: inline-block;
+    width: auto;
+    margin: 1%;
+  }
+
+  label {
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  div {
+    margin: 1%;
+  }
+
+  button {
+    margin: 1%;
+  }
+}
+
+.form-action-layout {
+  position: sticky;
+  float: right;
+  right: 0px;
+  right: 0;
+  display: block;
+  width: 30%;
+
+  button {
+    margin-left: 1%;
+  }
+}
+.main-content {
+  padding: 3% !important;
+  overflow: scroll;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.mar-lef-5 {
+  margin-left: 5px !important;
+}
+
+.loader {
+  margin: auto;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
